@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="jus">
+
+<head>
+  <title>Justicia para todos - Corporación</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/ionicons.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <!-- Librarys -->
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="node_modules/firebase/firebase.js"></script>
+  <script src="node_modules/angularfire/dist/angularfire.min.js"></script>
+  <script src="node_modules/angular-route/angular-route.min.js"></script>
+
+  <!-- APP -->
+  <script src="app/app.js"></script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5PXQBSP');
+  </script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Justicia para todos</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="index.html" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="cms/" class="nav-link">Administrador</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
+
+  <div class="hero-wrap" style="background-image: url('images/bg_7.jpg');" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+        <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
+          <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Asesoría gratuita para
+            personas de bajos recursos</h1>
+          <p class="mb-5" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Somos Justicia para Todos</p>
+
+          <!-- <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="https://vimeo.com/45830194" class="btn btn-white btn-outline-white px-4 py-3 popup-vimeo"><span
+                class="icon-play mr-2"></span>Ver Video</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="ftco-counter ftco-intro" id="section-counter">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-md-5 d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18 color-1 align-items-stretch">
+            <div class="text">
+              <span>Hemos ayudado a</span>
+              <strong class="number" data-number="105">0</strong>
+              <span>Personas en 91 distintos casos</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18 color-2 align-items-stretch">
+            <div class="text">
+              <h3 class="mb-4">Solicite atención</h3>
+              <p>¿Necesitas nuestra ayuda? Contáctanos a través del siguiente</p>
+              <p><a href="contact.html" class="btn btn-white px-3 py-2 mt-2">Solicitar orientación</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18 color-3 align-items-stretch">
+            <div class="text">
+              <h3 class="mb-4">Contáctenos</h3>
+              <p>Déjenos sus datos y su mensaje y nos pondremos en contacto con usted.</p>
+              <p><a href="contact.html" class="btn btn-white px-3 py-2 mt-2">Contáctenos</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section" style="padding: 5em 0 0">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-3">
+        <div class="col-md-7 heading-section ftco-animate text-center">
+          <h2 class="mb-4">Acerca de nosotros</h2>
+          <p>
+            Prestar servicios legales gratuitos y/o de bajo costo que incluyan asesoría y acompañamiento,
+            representación judicial, litigio de interés público, consultoría,
+            interventoría, auditoria, capacitación, e investigación en las diferentes áreas del derecho en el ámbito
+            nacional e internacional.
+          </p>
+        </div>
+      </div>
+      <div class="row d-flex">
+        <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry align-self-stretch">
+            <a href="blog-single.html" class="block-20" style="background-image: url('images/wayuuWoman.jpeg');height: 120px;">
+            </a>
+            <div class="text p-4 d-block">
+              <h3 class="heading mt-3"><a href="#">¿Cuál es nuestro objeto? </a></h3>
+              <p>La Corporación para la Acción Social Integral, y el Acceso a La Justicia Para Todos, tiene como objeto
+                social el diagnóstico, formulación, implementación, ejecución,
+                seguimiento, evaluación, promoción y difusión de planes, programas, acciones, estrategias, y proyectos
+                sostenibles, para la acción social integral y el acceso a la Justicia,
+                con perspectiva de géneros y dirigido a comunidades y poblaciones de bajos ingresos, o en situación de
+                exclusión, vulnerabilidad, riesgo social o pobreza.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry align-self-stretch">
+            <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');height: 220px;">
+            </a>
+            <div class="text p-4 d-block">
+              <h3 class="heading mt-3"><a href="#">¿Para qué?</a></h3>
+              <p>
+                Para incidir positivamente en el mejoramiento de la condición y calidad de vida de las distintas
+                poblaciones, en el ejercicio de protección y exigibilidad de sus libertades y derechos, para el logro
+                de una ciudadanía plena y la realización de la justicia social.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry align-self-stretch">
+            <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
+            </a>
+            <div class="text p-4 d-block">
+              <h3 class="heading mt-3"><a href="#">¿Qué hacemos?</a></h3>
+              <p>En cumplimiento de su objeto social la Corporación para la Acción Social Integral, y el Acceso a La
+                Justicia Para Todos desarrollará las siguientes actividades: </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section" style="padding: 0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+          <div class="media block-6 d-flex services p-3 py-4 d-block">
+            <div class="icon d-flex mb-3"><span class="flaticon-handshake"></span></div>
+            <div class="media-body pl-4">
+              <p>Organización social para la participación cívica, comunitaria, pedagógica, económica, política de los
+                y las ciudadanas, como también para el fortalecimiento de la identidad, la acción colectiva y el poder
+                local de los distintos grupos sociales</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-6 d-flex align-self-stretch ftco-animate">
+              <div class="media block-6 d-flex services p-3 py-4 d-block">
+                <div class="icon d-flex mb-3"><span class="flaticon-human-rights"></span></div>
+                <div class="media-body pl-4">
+                  <h3 class="heading"> Democracia y Derechos Humanos </h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex align-self-stretch ftco-animate">
+              <div class="media block-6 d-flex services p-3 py-4 d-block">
+                <div class="icon d-flex mb-3"><span class="flaticon-donation"></span></div>
+                <div class="media-body pl-4">
+                  <h3 class="heading">Habitat y Medio Ambiente</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex align-self-stretch ftco-animate">
+              <div class="media block-6 d-flex services p-3 py-4 d-block">
+                <div class="icon d-flex mb-3"><span class="flaticon-donation-2"></span></div>
+                <div class="media-body pl-4">
+                  <h3 class="heading">Recreativa, Cultural y Identitaria </h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex align-self-stretch ftco-animate">
+              <div class="media block-6 d-flex services p-3 py-4 d-block">
+                <div class="icon d-flex mb-3"><span class="flaticon-cheque"></span></div>
+                <div class="media-body pl-4">
+                  <h3 class="heading">Formación colectiva e Investigación</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+          <div class="media block-6 d-flex services p-3 py-4 d-block">
+            <div class="icon d-flex mb-3"><span class="flaticon-donation-1"></span></div>
+            <div class="media-body pl-4">
+              <h3 class="heading">Emprendimiento Empresarial y Economía Solidaria</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+          <div class="media block-6 d-flex services p-3 py-4 d-block">
+            <div class="icon d-flex mb-3"><span class="flaticon-caduceus"></span></div>
+            <div class="media-body pl-4">
+              <h3 class="heading">Salud Pública y Comunitaria </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+          <div class="media block-6 d-flex services p-3 py-4 d-block">
+            <div class="icon d-flex mb-3"><span class="flaticon-food"></span></div>
+            <div class="media-body pl-4">
+              <h3 class="heading">Agricultura, Seguridad Alimentaria y Nutricional</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section bg-light" ng-controller="loadArticles as ctrl">
+    <div class="container-fluid" ng-if="ctrl.items.length>0" style="display: none" id="articles">
+      <div class="row justify-content-center mb-5 pb-3">
+        <div class="col-md-5 heading-section ftco-animate text-center">
+          <h2 class="mb-4">Nuestros escritos</h2>
+          <p>Lee nuestros últimos escritos.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 ftco-animate">
+          <div class="carousel-cause owl-carousel">
+            <div class="item" ng-repeat="article in ctrl.items | orderBy:'-creationDate'" ng-click="ctrl.goArticle(article.$id, article.title)">
+              <div class="cause-entry">
+                <a class="img" ng-style="{'background-image': 'url({{article.image}})'}"></a>
+                <div class="text p-3 p-md-4">
+                  <h3><a>{{article.title}}</a></h3>
+                  <p>{{article.abstract}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="ftco-loader-two" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg>
+    </div>
+  </section>
+
+  <section class="ftco-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-3">
+        <div class="col-md-7 heading-section ftco-animate text-center">
+          <h2 class="mb-4">Quiénes somos</h2>
+          <p>Esta entidad representa la oportunidad de que todos los ciudadanos puedan acceder a la justicia en
+            igualdad de condiciones..</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/mauricio.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>César Mauricio Castro Molina</h3>
+                <div class="text">
+                  <p>Asesor en <a href="#">Derecho Constitucional</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/carlos-andres-garcia-manrique.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>Carlos Andrés García Manrrique</h3>
+                <div class="text">
+                  <p>Asesor en <a href="#">Derecho de Familia</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/Luis-Antonio-bernal-munevar.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>Luis Antonio Bernal Munevar</h3>
+                <div class="text">
+                  <p>Asesor en <a href="#">Derecho de Familia</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/Elizabeth-Quintero-Molina.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>Elizabeth Quintero Molina</h3>
+                <div class="text">
+                  <p>Asesora en <a href="#">Derecho Público</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/Alejandra-Torres-Piragauta.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>Alejandra Torres Piragauta</h3>
+                <div class="text">
+                  <p>Asesora en <a href="#">Derecho Constitucional</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/Giovanna-Florian-Cruz.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>Giovanna Florian Cruz</h3>
+                <div class="text">
+                  <p>Asesora en <a href="#">Derecho Privado</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/Miguel-Angel-Tenjo-Reyes.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>Miguel Ángel Tenjo Reyes</h3>
+                <div class="text">
+                  <p>Asesor en <a href="#">Derecho Administrativo</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/Kelly-Johana-Sosa-Alvarado.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>Kelly Johana Sosa Alvarado</h3>
+                <div class="text">
+                  <p>Asesora <a href="#">Contable</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/Luz-Angela-Rodriguez-Contreras.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>Luz Angela Rodriguez Contreras</h3>
+                <div class="text">
+                  <p>Asesora <a href="#">Contable</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/Laura-Juliana-Santacoloma-Mendez.jpg);"></div>
+              <div class="info ml-4">
+                <h3>Laura Juliana Santacoloma Mendéz</h3>
+                <div class="text">
+                  <p>Asesora en <a href="#">Derecho Ambiental</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/Paola-Graziano.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>Paola Graziano</h3>
+                <div class="text">
+                  <p>Asesora <a href="#">Económica</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/Mari-Lucia-Carriazo-Florez.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>Mari Lucía Carriazo Flórez</h3>
+                <div class="text">
+                  <p>Asesora en <a href="#">Publicidad Digital</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/Maria-Isabel-Brum.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>María Isabel Brum</h3>
+                <div class="text">
+                  <p>Asesora en <a href="#">Ejecución de Proyectos Sociales</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/Paola-Andrea-Malaver-Pena.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>Paola Andrea Malaver Peña</h3>
+                <div class="text">
+                  <p>Asesora en <a href="#">Licitaciónes y mecanización agrícola</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/Cesar-Adolfo-avila-Royert.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>César Adolfo Ávila Royert</h3>
+                <div class="text">
+                  <p>Asesor Pedagógico en<a href="#"> Ciencias Sociales</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/Diana-Alejandra-Suarez-Alvarado.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>Diana Alejandra Suarez Alvarado</h3>
+                <div class="text">
+                  <p>Asesora en <a href="#">Pedagogía en Derechos Humanos</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/Susam-Paola-Laverde-Sanchez.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>Susam Paola Laverde Sanchéz</h3>
+                <div class="text">
+                  <p>Asesora en <a href="#">Pedagogía en Biología</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/Gina-Paola-Brochero-Vergara.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>Gina Paola Brochero Vergara</h3>
+                <div class="text">
+                  <p>Asesora en <a href="#">Derecho de Familia</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/Viviana-Rojas-Munoz.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>Viviana Rojas Muñoz</h3>
+                <div class="text">
+                  <p>Asesora en <a href="#">Derecho de Familia</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/christian-camilo-corredor.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>Christian Camilo Corredor</h3>
+                <div class="text">
+                  <p>Asesor en <a href="#">Derecho Penal</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/Diana-Moreno.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>Diana Moreno</h3>
+                <div class="text">
+                  <p>Asesora en <a href="#">Comunicación Social</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/Luz-Myriam-Camacho-gallego.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>Luz Myriam Camacho Gallego</h3>
+                <div class="text">
+                  <p>Asesora en <a href="#">Derecho de Familia</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/Katherine-Cerquera.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>Katherine Cerquera</h3>
+                <div class="text">
+                  <p>Asesora en <a href="#">Derecho Privado</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/Laura-Torres.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>Laura Torres</h3>
+                <div class="text">
+                  <p>Asesora en <a href="#">Derecho Laboral</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/Monica-Nudelman.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>Mónica Nudelman</h3>
+                <div class="text">
+                  <p>Asesora en <a href="#">Protección a los Derechos Humanos</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/Wendy-Calle.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>Wendy Calle</h3>
+                <div class="text">
+                  <p>Asesora en <a href="#">Proyectos Culturales</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/Keren-Riveros.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>Keren Riveros</h3>
+                <div class="text">
+                  <p>Asesora en <a href="#">Pedagógia en Ciencias Sociales</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/Mirta-Porras.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>Mirta Porras</h3>
+                <div class="text">
+                  <p>Asesora en <a href="#">Pedagogía en Matemáticas</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/Johanna-Baquero.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>Johanna Baquero</h3>
+                <div class="text">
+                  <p>Asesora en <a href="#">Medios Audiovisuales</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/Erika-Martinez.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>Erika Martinez</h3>
+                <div class="text">
+                  <p>Asesora en <a href="#">Cooperanción internacional</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/Lizeth-Triana.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>Lizeth Triana</h3>
+                <div class="text">
+                  <p>Asesora en <a href="#">Derecho Internacional Humanitario</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+            <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/team/jorge-mario.jpeg);"></div>
+              <div class="info ml-4">
+                <h3>Jorge Mario Gaspar Toro</h3>
+                <div class="text">
+                  <p>Asesor en el <a href="#">Área de la salud</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-gallery">
+    <div class="d-md-flex">
+      <a href="images/childrenColombian.jpeg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate"
+        style="background-image: url(images/childrenColombian.jpeg);">
+        <div class="icon d-flex justify-content-center align-items-center">
+          <span class="icon-search"></span>
+        </div>
+      </a>
+      <a href="images/recicladores.jpeg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate"
+        style="background-image: url(images/recicladores.jpeg);">
+        <div class="icon d-flex justify-content-center align-items-center">
+          <span class="icon-search"></span>
+        </div>
+      </a>
+      <a href="images/cause-6.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate"
+        style="background-image: url(images/cause-6.jpg);">
+        <div class="icon d-flex justify-content-center align-items-center">
+          <span class="icon-search"></span>
+        </div>
+      </a>
+      <a href="images/colombiaPoor.jpeg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate"
+        style="background-image: url(images/colombiaPoor.jpeg);">
+        <div class="icon d-flex justify-content-center align-items-center">
+          <span class="icon-search"></span>
+        </div>
+      </a>
+    </div>
+    <div class="d-md-flex">
+      <a href="images/colombiaGuardaespaldas.jpeg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate"
+        style="background-image: url(images/colombiaGuardaespaldas.jpeg);">
+        <div class="icon d-flex justify-content-center align-items-center">
+          <span class="icon-search"></span>
+        </div>
+      </a>
+      <a href="images/image_3.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate"
+        style="background-image: url(images/image_3.jpg);">
+        <div class="icon d-flex justify-content-center align-items-center">
+          <span class="icon-search"></span>
+        </div>
+      </a>
+      <a href="images/wayuuWoman.jpeg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate"
+        style="background-image: url(images/wayuuWoman.jpeg);">
+        <div class="icon d-flex justify-content-center align-items-center">
+          <span class="icon-search"></span>
+        </div>
+      </a>
+      <a href="images/image_2.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate"
+        style="background-image: url(images/image_2.jpg);">
+        <div class="icon d-flex justify-content-center align-items-center">
+          <span class="icon-search"></span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- <section class="ftco-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+            <h2 class="mb-4">Our Latest Events</h2>
+          </div>
+        </div>
+        <div class="row">
+        	<div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry align-self-stretch">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/event-1.jpg');">
+              </a>
+              <div class="text p-4 d-block">
+              	<div class="meta mb-3">
+                  <div><a href="#">Sep. 10, 2018</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                </div>
+                <h3 class="heading mb-4"><a href="#">World Wide Donation</a></h3>
+                <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 10:30AM-03:30PM</span> <span><i class="icon-map-o"></i> Venue Main Campus</span></p>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <p><a href="event.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry align-self-stretch">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/event-2.jpg');">
+              </a>
+              <div class="text p-4 d-block">
+              	<div class="meta mb-3">
+                  <div><a href="#">Sep. 10, 2018</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                </div>
+                <h3 class="heading mb-4"><a href="#">World Wide Donation</a></h3>
+                <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 10:30AM-03:30PM</span> <span><i class="icon-map-o"></i> Venue Main Campus</span></p>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <p><a href="event.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry align-self-stretch">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/event-3.jpg');">
+              </a>
+              <div class="text p-4 d-block">
+              	<div class="meta mb-3">
+                  <div><a href="#">Sep. 10, 2018</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                </div>
+                <h3 class="heading mb-4"><a href="#">World Wide Donation</a></h3>
+                <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 10:30AM-03:30PM</span> <span><i class="icon-map-o"></i> Venue Main Campus</span></p>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <p><a href="event.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+  <section class="ftco-section-3 img" style="background-image: url(images/event-5.jpg);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row d-md-flex">
+        <div class="col-md-6 d-flex ftco-animate">
+          <div class="img img-2 align-self-stretch" style="background-image: url(images/childrenRunning.jpeg);"></div>
+        </div>
+        <div class="col-md-6 volunteer pl-md-5 ftco-animate">
+          <h3 class="mb-3">Contáctenos</h3>
+          <form action="https://lacopatecopia.com/proof/mail.php" class="volunter-form">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Tu nombre" id="name" name="name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Tu correo" id="mail" name="mail">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Tu teléfono" id="tel" name="tel">
+            </div>
+            <div class="form-group">
+              <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="Mensaje" id="message" name="message"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Enviar mensaje" class="btn btn-white py-3 px-5">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="ftco-section azul" style="padding: 0">
+    <div class="container">
+      <div class="row">
+        <h1 style="margin: 0.5em auto;">Información pública</h1>
+      </div>
+      <div class="row">
+        <h5 style="margin: auto;">RÉGIMEN TRIBUTARIO ESPECIAL</h5>
+      </div>
+      <sdiv class="row">
+        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+          <div class="media block-6 d-flex services p-3 d-block">
+            <div class="icon d-flex mb-3"><span class="flaticon-cheque"></span></div>
+            <div class="media-body pl-4">
+              <h3 class="heading">Certificación fundadores</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+          <div class="media block-6 d-flex services p-3 d-block">
+            <div class="icon d-flex mb-3"><span class="flaticon-donation-1"></span></div>
+            <div class="media-body pl-4">
+              <h3 class="heading">Estados financieros </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+          <div class="media block-6 d-flex services p-3 d-block">
+            <div class="icon d-flex mb-3"><span class="flaticon-handshake"></span></div>
+            <div class="media-body pl-4">
+              <h3 class="heading">Informes de gestión</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+          <div class="media block-6 d-flex services p-3 d-block">
+            <div class="icon d-flex mb-3"><span class="flaticon-food"></span></div>
+            <div class="media-body pl-4">
+              <h3 class="heading">Declaración de renta año gravable 2018</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+          <div class="media block-6 d-flex services p-3 d-block">
+            <div class="icon d-flex mb-3"><span class="flaticon-food"></span></div>
+            <div class="media-body pl-4">
+              <h3 class="heading">Artículo 364-5 Estatuto tributario</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="ftco-footer ftco-section img">
+    <div class="container" id="footer">
+      <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+        <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+        <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+        <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+      </ul>
+      <p>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        Copyright &copy;
+        <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i
+          class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      </p>
+    </div>
+  </footer>
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
+  <div id="cookies">
+    Por medio de este sitio web se recogen datos de carácter personal necesarios para la gestión y mantenimiento de
+    algunos de nuestros servicios.
+    <br>
+    Si continúa navegando en este sitio está aceptando nuestra política de manejo de datos.
+    <span>X</span>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById("cookies").children[1].addEventListener('click', function (e) { document.getElementsByTagName("body")[0].removeChild(document.getElementById("cookies")) })
+  </script>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5PXQBSP" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+</body>
+
+</html>
